@@ -1,0 +1,47 @@
+$color-primary : #FFFFFF;
+$color-secondary : #F9FAFB;
+$color-dark : #000000;
+$color-pink : #FF38AC;
+$color-grey : #EBEDF0;
+
+$font-sahel: Sahel, Tahoma;
+
+@font-face {
+    font-family: Sahel;
+    
+    src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+    
+    font-weight: normal;
+}
+
+@mixin appstyle {
+    width: 80vw;
+    height: 75vh; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@mixin imgstyle {
+        width: 35vw;
+        height: 85vh;
+        left: 12vw;
+        position: absolute;
+        bottom: 2vw;
+}
+
+@mixin itemmenu {
+    top: 32rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $color-primary;
+    font-family: $font-sahel;
+}
